@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Real<span style="color: red;">Houzing</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="house.html"><span
+                                style="color: red;">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html"><b> Blog Page</b></a></li>
+                            <li><a class="dropdown-item" href="single.html"><b> Blog Single</b></a></li>
+                            <li><a class="dropdown-item" href="landing.html"><b>Landing Page</b> </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                    <!-- 👇 Search icon as nav-item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="openSearch()">
+                            <i class="fa-solid fa-magnifying-glass fa-sm search-btn-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section">
+        <div class="overlay">
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <p><a href="house.html" style="color: red;"><b>Home</b></a> <i
+                        class="fa-solid fa-angles-right fa-sm"></i> <span><b>Contact Us</b></span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <p class="text-uppercase text-secondary fw-bold">Contact Our Team</p>
+            <h2>Got Any Questions?</h2>
+
+            <div class="contact-grid mt-5">
+                <!-- Address -->
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="contact-title">Address</div>
+                    <div class="contact-info">
+                        #302, 5th Floor, VHLY-2247<br />
+                        ek, RealHouzing, New York.
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-title">Email</div>
+                    <div class="contact-info">
+                        mailone@example.com<br />
+                        mailtwo@example.com
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-title">Phone</div>
+                    <div class="contact-info">
+                        +12 324-016-695<br />
+                        +44 224-058-545
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <form>
+                <div class="row g-4">
+                    <!-- Name -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Enter your name *" required>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Enter subject">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Enter your email *" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Enter your Phone Number *" required>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="col-12">
+                        <textarea rows="5" class="form-control" placeholder="Type your query here"></textarea>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-send">
+                            Send Message
+                            <i class="fas fa-paper-plane form-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24177.282121394776!2d-74.0060152!3d40.7127281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a1f4e99%3A0xf47656b89c0dd634!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1698677460123!5m2!1sen!2s"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About -->
+            <div>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h3 class="come">Company</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Why Us</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Our Agents</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Our Offers</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="ex">Services</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Buy Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Sell Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Rent Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Property Search</a></li>
+                </ul>
+            </div>
+
+            <!-- Explore -->
+            <div>
+                <h3 class="ex">Explore</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Homes for Rent</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Apartments for Rent</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Homes for Sale</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Apartments for Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay Update -->
+            <div class="subscribe">
+                <h3>Stay Update!</h3>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+                <input type="email" placeholder="Email" />
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="left">
+                © 2021 RealHouzing. All rights reserved. Design by <span>W3Layouts</span>
+            </div>
+            <div class="right">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-box">
+            <!-- ✅ Close icon INSIDE search box -->
+            <div class="close-icon" onclick="closeSearch()">❌</div>
+            <h2>Search Here</h2>
+            <div class="search-input">
+                <input type="text" placeholder="Search here..." />
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openSearch() {
+            document.getElementById('searchModal').style.display = 'flex';
+            document.querySelector('.close-icon').style.display = 'block';
+        }
+
+        function closeSearch() {
+            document.getElementById('searchModal').style.display = 'none';
+            document.querySelector('.close-icon').style.display = 'none';
+        }
+    </script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="single.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Real<span style="color: red;">Houzing</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="house.html"><span
+                                style="color: red;">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html"><b> Blog Page</b></a></li>
+                            <li><a class="dropdown-item" href="single.html"><b> Blog Single</b></a></li>
+                            <li><a class="dropdown-item" href="landing.html"><b>Landing Page</b> </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- 👇 Search icon as nav-item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="openSearch()">
+                            <i class="fa-solid fa-magnifying-glass fa-sm search-btn-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section">
+        <div class="overlay">
+            <div class="hero-text">
+                <h1>Blog Single</h1>
+                <p><a href="house.html" style="color: red;"><b>Home</b></a> <i
+                        class="fa-solid fa-angles-right fa-sm"></i> <span><b>Single</b></span></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+        <div class="row">
+            <!-- Left Content -->
+            <div class="col-lg-8 order-1 order-lg-1 mt-5">
+                <img src="image/banner3.jpg" class="img-fluid rounded" alt="House">
+                <div class="post-meta">
+                    <img src="image/team2.jpg" alt="Admin">
+                    <a href=""><strong>by Admin</strong></a>
+                    <span><i class="fa-solid fa-clock"></i> Oct 22, 2021</span>
+                    <span style="color: black;"><i class="fa-solid fa-comments"></i> 3</span>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 order-2 order-lg-2 mt-5">
+                <div class="sidebar-box">
+                    <h3>Latest Post</h3>
+
+                    <div class="post-item">
+                        <img src="image/d1.jpg" alt="">
+                        <div class="info">
+                            <a href="">
+                                <h5>Why We Are The Best<br>In The Business</h5>
+                            </a>
+                            <span>Oct 19, 2021 - 2 comments</span>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <img src="image/d2.jpg" alt="">
+                        <div class="info">
+                            <a href="">
+                                <h5>Build Your Next<br> Landing Page.</h5>
+                            </a>
+                            <span>Oct 20, 2021 - 2 comments</span>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <img src="image/d3.jpg" alt="">
+                        <div class="info">
+                            <a href="">
+                                <h5>Simply The Best. Better<br> Than The Rest.</h5>
+                            </a>
+                            <span>Oct 21, 2021 - 2 comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-2">
+        <div class="row">
+            <!-- Left Content -->
+            <div class="col-lg-8 contant">
+                <h3 class="fw-bold mb-3">
+                    Importers Achieve Cost Savings Through The First Sale Rule!
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, amet fuga harum nulla laborum
+                    aliquid maxime accusamus vitae quas minima nisi facere quidem omnis perferendis voluptatum corrupti,
+                    voluptatem aperiam quod.
+                </p>
+
+                <p>
+                    Vestibulum laoreet erat nisi, sit amet ultrices. Vestibulum feugiat tortor vitae diam euismod, ut et
+                    inter dum nisi fermentum. Repudiandae, amet fuga harum nulla laborum aliquid maxime accusamus vitae
+                    quas.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, amet fuga harum nulla laborum
+                    aliquid maxime accusamus vitae quas minima nisi facere quidem omnis perferendis voluptatum corrupti,
+                    voluptatem aperiam quod.
+                </p>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-4">
+                <div class="blog-category-box p-4">
+                    <h4 class="mb-4 fw-bold text-uppercase">Blog Categories</h4>
+                    <ul class="list-unstyled blog-categories">
+                        <li><a href="#"><i class="fa-solid fa-angles-right me-2"></i>Multimedia Insights</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right me-2"></i>Industry Insights</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right me-2"></i>Partner Insights</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right me-2"></i>Services Insights</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right me-2"></i>Company Insights</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right me-2"></i>Uncategorized</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-8 contant">
+                <!-- Testimonial Box -->
+                <div class="border p-4 mb-2 position-relative bg-light rounded">
+                    <h4 class="mb-3 d-block">
+                        “Pellentesque sed sodales nunc. Vestibulum laoreet erat nisi, sit amet ultrices,Vestibulum
+                        feugiat tortor vitae diam euismod.”
+                        <p style="color: lightslategrey; font-size: 20px;margin-top: 2%;">_David Marks</p>
+                    </h4>
+                </div>
+
+                <!-- Paragraph under testimonial -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, amet fuga harum nulla laborum
+                    aliquid maxime accusamus vitae quas minima nisi facere quidem omnis perferendis voluptatum corrupti,
+                    voluptatem aperiam quod.
+                </p>
+
+                <!-- Heading below paragraph -->
+                <h2 class="fw-bold mt-4">Vestibulum feugiat tortor vitae diam euismod, ut et inter dum nisi fermentum.
+                </h2>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-4">
+                <div class="image-wrapper">
+                    <div class="real-estate-banner">
+                        <img src="image/d1.jpg" alt="Real Estate" class="banner-image">
+                        <div class="banner-overlay">
+                            <h5 class="banner-text">Do you want to join our real estate network?</h5>
+                            <a href="#" class="custom-btn">
+                                Get started <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-3">
+        <div class="row align-items-start">
+
+            <!-- Left side: Image + Paragraph -->
+            <div class="col-lg-8">
+
+                <div class="card mb-3" style="border: none;">
+                    <div class="row g-0 align-items-center">
+                        <!-- Image -->
+                        <div class="col-md-5">
+                            <img src="image/g5.jpg" class="img-fluid rounded-start" alt="..."
+                                style="height: 250px; object-fit: cover;">
+                        </div>
+                        <!-- Paragraph -->
+                        <div class="col-md-7 para">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Vestibulum feugiat tortor vitae diam euismod, ut et inter dum nisi fermentum.
+                                    Pellentesque sed sodales nunc. Vestibulum laoreet erat nisi, sit amet ultrices.
+                                    Vestibulum feugiat tortor vitae diam euismod, ut et inter dum nisi fermentum.
+                                    Pellentesque sed sodales nunc. Vestibulum laoreet erat nisi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side: Only Featured Agents -->
+            <div class="col-lg-4">
+                <div class="agents-box p-3" style="background-color: #f9f9f9; border-radius: 8px;">
+                    <h4 class="mb-4 fw-bold">Featured agents</h4>
+
+                    <!-- Agent 1 -->
+                    <div class="agent-post d-flex mb-3">
+                        <img src="image/team1.jpg" alt=""
+                            style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+                        <div class="link">
+                            <a href="#">
+                                <h5 class="mb-1">Johnson Kerald</h5>
+                            </a>
+                            <p class="mb-0">Kerald@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Agent 2 -->
+                    <div class="agent-post d-flex">
+                        <img src="image/team2.jpg" alt=""
+                            style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+                        <div class="link">
+                            <a href="#">
+                                <h5 class="mb-1">Louis Allie</h5>
+                            </a>
+                            <p class="mb-0">Allie@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container mt-2">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <!-- Icons Section -->
+                <div class="d-flex gap-3 mb-3">
+                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+
+                <!-- Border bottom -->
+                <hr class="custom-hr">
+
+                <!-- Prev Post Heading -->
+                <div class="d-flex align-items-center mt-4 post">
+                    <i class="fa-solid fa-arrow-left me-2 text-muted"></i>
+                    <a href="">
+                        <h6 class="text-muted mb-0">Prev Post</h6>
+                    </a>
+                </div>
+
+                <!-- Paragraph -->
+                <div class="head">
+                    <a href="" style="text-decoration: none;">
+                        <p class="hover-text fw-bold mt-2">Lorem ipsum dolor sit</p>
+                    </a>
+                </div>
+
+                <!-- Border bottom -->
+                <hr class="custom-hr">
+
+                <!-- Next Post Heading -->
+                <div class="d-flex align-items-center mt-4 post">
+                    <i class="fa-solid fa-arrow-right me-2 text-muted"></i>
+                    <a href="">
+                        <h6 class="text-muted mb-0">Next Post</h6>
+                    </a>
+                </div>
+
+                <!-- Paragraph -->
+                <div class="d-flex align-items-center mt-4 post">
+                    <i class="fa-solid fa-arrow-left me-2 text-muted"></i>
+                    <a href="">
+                        <h6 class="text-muted mb-0">Prev Post</h6>
+                    </a>
+                </div>
+
+                <!-- Final Border bottom -->
+                <hr class="custom-hr">
+            </div>
+            <div class="col-lg-4">
+                <!-- Tags Box -->
+                <div class="tags-box">
+                    <h4 class="fw-bold mb-4">Tags</h4>
+                    <div class="tag-buttons d-flex flex-wrap gap-3">
+                        <button class="btn btn-outline-secondary btn-sm">Listing</button>
+                        <button class="btn btn-outline-secondary btn-sm">Property</button>
+                        <button class="btn btn-outline-secondary btn-sm">Rent</button>
+                        <button class="btn btn-outline-secondary btn-sm">Sale</button>
+                        <button class="btn btn-outline-secondary btn-sm">Estate</button>
+                        <button class="btn btn-outline-secondary btn-sm">Villa</button>
+                        <button class="btn btn-outline-secondary btn-sm">Home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container comment-container">
+        <div class="comment-heading">Comments</div>
+
+        <div class="d-flex align-items-start gap-2">
+            <!-- User Image -->
+            <img src="image/team1.jpg" alt="User" class="comment-image">
+
+            <!-- Comment Box -->
+            <div class="comment-box">
+                <h5 class="mb-1">Bradley</h5>
+                <div class="comment-meta mb-2">
+                    20 Apr 2021 <span class="reply-btn">| Reply</span>
+                </div>
+                <p class="mb-0">
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                    fringilla.
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-start gap-2 mb-2 mt-3">
+            <img src="image/team2.jpg" alt="Harold" class="comment-image" />
+            <div class="comment-box w-100">
+                <div class="comment-name">Harold</div>
+                <div class="comment-meta mb-2">
+                    23 Oct 2021 <span class="reply-btn">| Reply</span>
+                </div>
+                <p class="mb-0">
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus ante sollicitudin. Cras purus odio,
+                    vestibulum in at, tempus turpis. Fusce nunc ac nisi.
+                </p>
+
+                <!-- Nested Reply: Dennis Jack -->
+                <div class="d-flex align-items-start gap-3 mt-5 ms-3">
+                    <img src="image/team3.jpg" alt="Dennis Jack" class="comment-image" />
+                    <div class="comment-box w-100 no-border">
+                        <div class="comment-name">Dennis Jack</div>
+                        <div class="comment-meta mb-2">
+                            24 Oct 2021 <span class="reply-btn">| Reply</span>
+                        </div>
+                        <p class="mb-0">
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel ante. Cras purus odio, in vulputate
+                            at.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Nested Reply -->
+
+            </div>
+        </div>
+
+        <div class="d-flex align-items-start gap-2 mt-3">
+            <!-- User Image -->
+            <img src="image/team4.jpg" alt="User" class="comment-image">
+
+            <!-- Comment Box -->
+            <div class="comment-box">
+                <h5 class="mb-1">Anthony</h5>
+                <div class="comment-meta mb-2">
+                    24 Oct 2021 <span class="reply-btn">| Reply</span>
+                </div>
+                <p class="mb-0">
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container reply-container">
+        <div class="reply-heading">Leave a reply</div>
+
+        <form class="reply-form">
+            <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="post-comment-btn">
+                Post Comment <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About -->
+            <div>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h3 class="come">Company</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Why Us</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Our Agents</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Our Offers</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="ex">Services</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Buy Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Sell Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Rent Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Property Search</a></li>
+                </ul>
+            </div>
+
+            <!-- Explore -->
+            <div>
+                <h3 class="ex">Explore</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Homes for Rent</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Apartments for Rent</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Homes for Sale</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Apartments for Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay Update -->
+            <div class="subscribe">
+                <h3>Stay Update!</h3>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+                <input type="email" placeholder="Email" />
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="left">
+                © 2021 RealHouzing. All rights reserved. Design by <span>W3Layouts</span>
+            </div>
+            <div class="right">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-box">
+            <!-- ✅ Close icon INSIDE search box -->
+            <div class="close-icon" onclick="closeSearch()">❌</div>
+            <h2>Search Here</h2>
+            <div class="search-input">
+                <input type="text" placeholder="Search here..." />
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openSearch() {
+            document.getElementById('searchModal').style.display = 'flex';
+            document.querySelector('.close-icon').style.display = 'block';
+        }
+
+        function closeSearch() {
+            document.getElementById('searchModal').style.display = 'none';
+            document.querySelector('.close-icon').style.display = 'none';
+        }
+    </script>
+    <!-- navbar js -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

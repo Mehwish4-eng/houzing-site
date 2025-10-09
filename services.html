@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Real<span style="color: red;">Houzing</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="house.html"><span
+                                style="color: red;">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html"><b> Blog Page</b></a></li>
+                            <li><a class="dropdown-item" href="single.html"><b> Blog Single</b></a></li>
+                            <li><a class="dropdown-item" href="landing.html"><b>Landing Page</b> </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- 👇 Search icon as nav-item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="openSearch()">
+                            <i class="fa-solid fa-magnifying-glass fa-sm search-btn-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section">
+        <div class="overlay">
+            <div class="hero-text">
+                <h1>Services</h1>
+                <p><a href="house.html" style="color: red;"><b>Home</b></a> <i
+                        class="fa-solid fa-angles-right fa-sm"></i> <span><b>Services</b></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- post property -->
+    <div class="custom-container">
+        <div class="left-content">
+            <h6>Post Your Property</h6>
+            <h1>Property owners get free posting when they register</h1>
+            <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+                Lorem
+                ipsum dolor sit, amet consectetur elit. Earum mollitia cum ex ipsam autem! earum sequi amet.
+            </p>
+            <div class="buttons">
+                <a href="about.html"><button class="btn-primary">
+                        Services <i class="fa-solid fa-angles-right"></i>
+                    </button></a>
+                <a href="contact.html"><button class="btn-secondary">
+                        Contact Us <i class="fa-solid fa-angles-right"></i>
+                    </button></a>
+            </div>
+        </div>
+        <div class="right-image">
+            <img src="image/g6.jpg" alt="Sample Image">
+        </div>
+    </div>
+
+
+    <section class="property-section">
+        <h6>Our Properties</h6>
+        <h1>Explore Our Properties</h1>
+
+        <div class="property-grid">
+            <div class="property-card">
+                <img src="image/d1.jpg" alt="House" style="filter: brightness(80%);">
+                <div class="property-overlay">
+                    <i class="fa-solid fa-house"></i>
+                    <h3>House</h3>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="image/d2.jpg" alt="Apartment" style="filter: brightness(80%);">
+                <div class="property-overlay">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Appartment</h3>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="image/d3.jpg" alt="Villa" style="filter: brightness(80%);">
+                <div class="property-overlay">
+                    <i class="fa-solid fa-house-chimney-crack"></i>
+                    <h3>Villa</h3>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="image/d4.jpg" alt="Town" style="filter: brightness(80%);">
+                <div class="property-overlay">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Town</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- agents -->
+
+    <div class="custom-feature-container">
+        <h6>What We Do</h6>
+        <h1>What We Offered</h1>
+
+        <div class="custom-feature-row">
+            <div class="custom-feature-card">
+                <div class="custom-icon-box">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <a href="">
+                    <h3>Guidance You Need</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+            </div>
+
+            <div class="custom-feature-card">
+                <div class="custom-icon-box">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+                <a href="">
+                    <h3>Search That Feels Familiar</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+            </div>
+
+            <div class="custom-feature-card">
+                <div class="custom-icon-box">
+                    <i class="fa-solid fa-tags"></i>
+                </div>
+                <a href="">
+                    <h3>Premium Values</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+            </div>
+
+            <div class="custom-feature-card">
+                <div class="custom-icon-box">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <a href="">
+                    <h3>Secure Payment</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+            </div>
+
+            <div class="custom-feature-card">
+                <div class="custom-icon-box">
+                    <i class="fa-solid fa-money-bill-1"></i>
+                </div>
+                <a href="">
+                    <h3>No Commission</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+            </div>
+
+            <div class="custom-feature-card">
+                <div class="custom-icon-box">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <a href="">
+                    <h3>Top Rated Agents</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pricing-container">
+        <h6>OUR PLANS</h6>
+        <h1>OUR PLANS</h1>
+
+        <div class="pricing-row">
+
+            <!-- Card 1 -->
+            <div class="pricing-card">
+                <div class="pricing-icon"><i class="fa-solid fa-house"></i></div>
+                <div class="pricing-title">Personal</div>
+                <div class="pricing-sub">Free/month</div>
+                <div class="pricing-divider"></div>
+                <div class="pricing-details">
+                    10 Listings<br>
+                    2 Featured Listings
+                </div>
+                <a href="contact.html"><button class="pricing-button">
+                        Choose Plan <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                </a>
+                <div class="pricing-note">10% money back guarantee</div>
+            </div>
+
+            <!-- Card 2 (red border always visible) -->
+            <div class="pricing-card second">
+                <div class="pricing-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="pricing-title">Professional</div>
+                <div class="pricing-sub">49.99/6 month</div>
+                <div class="pricing-divider"></div>
+                <div class="pricing-details">
+                    20 Listings<br>
+                    5 Featured Listings
+                </div>
+                <a href="contact.html"><button class="pricing-button">
+                        Choose Plan <i class="fa-solid fa-angles-right"></i>
+                    </button></a>
+                <div class="pricing-note">20% money back guarantee</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="pricing-card">
+                <div class="pricing-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="pricing-title">Business</div>
+                <div class="pricing-sub">99.99/1 Year</div>
+                <div class="pricing-divider"></div>
+                <div class="pricing-details">
+                    30 Listings<br>
+                    10 Featured Listings
+                </div>
+                <a href="contact.html"> <button class="pricing-button">
+                        Choose Plan<i class="fa-solid fa-angles-right"></i>
+                    </button></a>
+                <div class="pricing-note">10% money back guarantee</div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About -->
+            <div>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h3 class="come">Company</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Why Us</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Our Agents</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Our Offers</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="ex">Services</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Buy Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Sell Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Rent Properties</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Property Search</a></li>
+                </ul>
+            </div>
+
+            <!-- Explore -->
+            <div>
+                <h3 class="ex">Explore</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Homes for Rent</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Apartments for Rent</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Homes for Sale</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Apartments for Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay Update -->
+            <div class="subscribe">
+                <h3>Stay Update!</h3>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+                <input type="email" placeholder="Email" />
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="left">
+                © 2021 RealHouzing. All rights reserved. Design by <span>W3Layouts</span>
+            </div>
+            <div class="right">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- search js -->
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-box">
+            <!-- ✅ Close icon INSIDE search box -->
+            <div class="close-icon" onclick="closeSearch()">❌</div>
+            <h2>Search Here</h2>
+            <div class="search-input">
+                <input type="text" placeholder="Search here..." />
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openSearch() {
+            document.getElementById('searchModal').style.display = 'flex';
+            document.querySelector('.close-icon').style.display = 'block';
+        }
+
+        function closeSearch() {
+            document.getElementById('searchModal').style.display = 'none';
+            document.querySelector('.close-icon').style.display = 'none';
+        }
+    </script>
+    <!-- navbar js -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
